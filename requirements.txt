@@ -4,6 +4,7 @@ certifi
 cffi
 charset-normalizer
 crispy-bootstrap5
+dj-database-url
 Django
 django-crispy-forms
 django-email
@@ -14,6 +15,7 @@ outcome
 packaging
 pillow
 psycopg2
+psycopg2-binary
 pycparser
 PyOpenGL
 PySocks
@@ -31,3 +33,4 @@ urllib3
 webdriver-manager
 websocket-client
 wsproto
+

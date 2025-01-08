@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 import environ
 env = environ.Env()
 environ.Env.read_env()
@@ -89,6 +90,12 @@ DATABASES = {
         "HOST": env("DB_HOST"),  # Reads DB_HOST from the .env file
         "PORT": env("DB_PORT"),  # Reads DB_PORT from the .env file
     }
+}
+# Replace the SQLite DATABASES configuration with PostgreSQL:
+DATABASES = {
+    "default": dj_database_url.config(
+        default="postgresql://bms_93im_user:8ElbL4AJWeQvs16adWSXKUfliClhglYQ@dpg-ctutb5ggph6c73arc8rg-a.oregon-postgres.render.com/bms_93im",
+    )
 }
 
 # Password validation
