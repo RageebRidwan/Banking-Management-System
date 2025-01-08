@@ -9,6 +9,7 @@ Django
 django-crispy-forms
 django-email
 django-environ
+gunicorn
 h11
 idna
 outcome
