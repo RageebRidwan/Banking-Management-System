@@ -83,7 +83,7 @@ class DepositMoneyView(TransactionCreateMixin):
             self.request.user,
             amount,
             "Deposite Message",
-            "transactions/deposite_email.html",
+            "transactions/deposit_message.html",
         )
 
         return super().form_valid(form)
